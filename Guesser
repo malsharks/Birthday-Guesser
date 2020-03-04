@@ -1,12 +1,21 @@
-
 <script>
-'use strict';
+  'use strict';
 
-// let year = prompt('In which year was I born?', '');
 
-if (year == 2003) alert( 'You are right!' );
+  let a = prompt('What year is it?');
 
-else if (year < 2003) alert( 'Really, you thought I was born in that year?');
+  let b = prompt('What day is is?');
 
-else if (year >= 2020) alert( 'Dude, comeon I am not that young.')
+  let c = prompt('What month is it (In number terms)?');
+
+  let d = prompt('What year were you born?');
+
+  let e = prompt('What day were you born on?');
+
+  let f = prompt('What month were born on?')
+
+  let result = confirm(a - d + ' The amount of years you have been alive for');
+  
+  console.log(result);
+
 </script>
