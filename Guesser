@@ -1,0 +1,12 @@
+
+<script>
+'use strict';
+
+// let year = prompt('In which year was I born?', '');
+
+if (year == 2003) alert( 'You are right!' );
+
+else if (year < 2003) alert( 'Really, you thought I was born in that year?');
+
+else if (year >= 2020) alert( 'Dude, comeon I am not that young.')
+</script>
