@@ -1,4 +1,4 @@
-                        <!DOCTYPE html> 
+  <!DOCTYPE html> 
 <html> 
 <head> 
     <meta charset="utf-8"> 
@@ -47,7 +47,7 @@ See if you can guess it.</p>
    if(x == y) 
    {     
        alert("You fianllly did it. Wow "
-               + guess + " GUESS "); 
+               + guess + ", It took you that many guesses "); 
    } 
    else if(x > y)  
    {     
@@ -60,5 +60,4 @@ See if you can guess it.</p>
        alert("Your number was too low") 
    } 
 } 
-</script> 
-</body>
+</script>
