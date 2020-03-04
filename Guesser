@@ -1,21 +1,64 @@
-<script>
-  'use strict';
-
-
-  let a = prompt('What year is it?');
-
-  let b = prompt('What day is is?');
-
-  let c = prompt('What month is it (In number terms)?');
-
-  let d = prompt('What year were you born?');
-
-  let e = prompt('What day were you born on?');
-
-  let f = prompt('What month were born on?')
-
-  let result = confirm(a - d + ' The amount of years you have been alive for');
+                        <!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Number Guessing Game</title> 
   
-  console.log(result);
-
-</script>
+    <style> 
+        html { 
+    font-family: arial; 
+    } 
+      
+        body { 
+    width: 50%; 
+    max-width: 800px; 
+    min-width: 480px; 
+    margin: 0 auto; 
+    } 
+    </style> 
+</head> 
+  
+<body> 
+<h1>Guess The Number</h1> 
+  
+<p>We have selected a random number between 1 - 10.  
+See if you can guess it.</p> 
+  
+<div class="form"> 
+    <label for="guessField">Enter a value: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+  
+<script type = "text/javascript"> 
+  
+    
+    var y = Math.floor(Math.random() * 10 + 1); 
+      
+    
+    var guess = 1; 
+      
+    document.getElementById("submitguess").onclick = function(){ 
+      
+         
+   var x = document.getElementById("guessField").value; 
+  
+   if(x == y) 
+   {     
+       alert("You fianllly did it. Wow "
+               + guess + " GUESS "); 
+   } 
+   else if(x > y)  
+   {     
+       guess++; 
+       alert("Your number was too high"); 
+   } 
+   else
+   { 
+       guess++; 
+       alert("Your number was too low") 
+   } 
+} 
+</script> 
+</body>
